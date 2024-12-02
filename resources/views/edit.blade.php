@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('tulisan1', 'Edit Pegawai')
+@section('tulisan1', 'Edit Meja')
 
 @section('link1')
     <a href="/pegawai"> Kembali</a>
@@ -10,11 +10,11 @@
 	@foreach($pegawai as $p)
 	<form action="/pegawai/update" method="post">
 		{{ csrf_field() }}
-
+        <input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br/>
         <div class="row mb-3">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-              <input type="text" name="nama" class="form-control" id="nama" required="required" value="{{ $p->pegawai_id }}">
+              <input type="text" name="nama" class="form-control" id="nama" required="required" value="{{ $p->pegawai_nama }}">
             </div>
         </div>
 
@@ -35,9 +35,10 @@
         <div class="row mb-3">
             <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
             <div class="col-sm-10">
-              <textarea name="alamat" class="form-control" id="alamat" required="required">{{ $p->pegawai_alamat }}</textarea>
+              <textarea  name="alamat" class="form-control" id="alamat" required="required">{{ $p->pegawai_alamat }}</textarea>
             </div>
-        </div>
+          </div>
+
 
         <div class="row mb-3">
             <div class="col-sm-12">

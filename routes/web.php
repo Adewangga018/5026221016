@@ -67,3 +67,12 @@ Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiDBController@edit')
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiDBController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiDBController@hapus');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiDBController@cari');
+
+//route meja
+Route::get('/meja','App\Http\Controllers\MejaController@indexMeja');
+Route::get('/meja/tambah','App\Http\Controllers\MejaController@tambah');
+Route::post('/meja/store','App\Http\Controllers\MejaController@store');
+Route::get('/meja/edit/{id}','App\Http\Controllers\MejaController@edit');
+Route::post('/meja/update','App\Http\Controllers\MejaController@update');
+Route::get('/meja/hapus/{id}','App\Http\Controllers\MejaController@hapus');
+Route::get('/meja/cari','App\Http\Controllers\MejaController@cari');

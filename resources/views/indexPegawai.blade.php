@@ -3,6 +3,8 @@
 @section('tulisan1','Data Pegawai')
 
 @section('link1')
+    <a href="/pegawai/" class="btn btn-success">Data Pegawai</a>
+    <a href="/meja/" class="btn btn-warning">Data Meja</a>
 	<a href="/pegawai/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>
 @endsection
 

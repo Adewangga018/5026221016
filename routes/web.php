@@ -76,3 +76,7 @@ Route::get('/meja/edit/{id}','App\Http\Controllers\MejaController@edit');
 Route::post('/meja/update','App\Http\Controllers\MejaController@update');
 Route::get('/meja/hapus/{id}','App\Http\Controllers\MejaController@hapus');
 Route::get('/meja/cari','App\Http\Controllers\MejaController@cari');
+
+//pagecounter
+Route::get('/pagecounter','App\Http\Controllers\VisitorCounterController@indexCounter');
+

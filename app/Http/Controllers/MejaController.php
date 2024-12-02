@@ -74,4 +74,5 @@ class MejaController extends Controller
 	// alihkan halaman ke halaman meja
 	return redirect('/meja');
     }
+
 }

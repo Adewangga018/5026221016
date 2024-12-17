@@ -80,3 +80,12 @@ Route::get('/meja/cari','App\Http\Controllers\MejaController@cari');
 //pagecounter
 Route::get('/pagecounter','App\Http\Controllers\VisitorCounterController@indexCounter');
 
+//UAS
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@indexNilaiKuliah');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+Route::get('/nilaikuliah/edit/{id}','App\Http\Controllers\NilaiKuliahController@edit');
+Route::post('/nilaikuliah/update','App\Http\Controllers\NilaiKuliahController@update');
+Route::get('/nilaikuliah/hapus/{id}','App\Http\Controllers\NilaiKuliahController@hapus');
+Route::get('/nilaikuliah/cari','App\Http\Controllers\NilaiKuliahController@cari');
+
